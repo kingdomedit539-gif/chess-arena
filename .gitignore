@@ -1,0 +1,20 @@
+node_modules
+.next
+out
+build
+dist
+
+# runtime data (player ratings + finished game archive)
+data/*.json
+public/engine/*
+!public/engine/.gitkeep
+
+.env
+.env.local
+.env*.local
+
+npm-debug.log*
+yarn-error.log*
+.DS_Store
+*.tsbuildinfo
+next-env.d.ts

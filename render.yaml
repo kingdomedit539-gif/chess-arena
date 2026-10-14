@@ -1,0 +1,41 @@
+# ---------------------------------------------------------------------------
+# Render.com blueprint — one free web service, no database required.
+#
+# 1. Push this repo to GitHub.
+# 2. Render → New → Blueprint → pick the repo (Render reads this file).
+# 3. Open the service URL. Socket.io runs on the same origin, so there is
+#    nothing else to configure.
+#
+# The free plan sleeps after ~15 minutes idle; the first request wakes it in a
+# few seconds. Ratings persist to `data/` for the life of the instance — set the
+# Supabase env vars from `.env.example` if you need durability across deploys.
+# ---------------------------------------------------------------------------
+
+services:
+  - type: web
+    name: chess-arena
+    runtime: node
+    plan: free
+    region: oregon
+    buildCommand: npm ci --no-audit --no-fund && npm run build
+    startCommand: node server/index.mjs
+    healthCheckPath: /api/health
+    autoDeploy: true
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: NODE_VERSION
+        value: "20.18.0"
+      - key: RECONNECT_GRACE_MS
+        value: "30000"
+      # Set to your public URL once Render assigns one (used to build the
+      # shareable private-room invite links).
+      - key: PUBLIC_URL
+        sync: false
+      # Optional — leave blank to use the local JSON store.
+      - key: NEXT_PUBLIC_SUPABASE_URL
+        sync: false
+      - key: NEXT_PUBLIC_SUPABASE_ANON_KEY
+        sync: false
+      - key: SUPABASE_SERVICE_ROLE_KEY
+        sync: false

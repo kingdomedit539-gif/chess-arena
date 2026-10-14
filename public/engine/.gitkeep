@@ -1,0 +1,1 @@
+# Keeps the folder in git; `npm run fetch:engine` drops the Stockfish builds here.

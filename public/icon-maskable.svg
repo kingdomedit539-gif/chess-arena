@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-label="Chess Arena">
+  <defs>
+    <linearGradient id="mbg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#81b64c"/>
+      <stop offset="1" stop-color="#557f30"/>
+    </linearGradient>
+    <linearGradient id="mpiece" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#e2ded6"/>
+    </linearGradient>
+  </defs>
+  <!-- Maskable: keep the artwork inside the safe zone (80% centre circle). -->
+  <rect width="512" height="512" fill="url(#mbg)"/>
+  <g transform="translate(256 262) scale(0.7)">
+    <path d="M-118 -74 L-86 -8 L-46 -70 L0 -4 L46 -70 L86 -8 L118 -74 L104 34 L-104 34 Z"
+          fill="url(#mpiece)" stroke="#3f5f23" stroke-width="12" stroke-linejoin="round"/>
+    <circle cx="-118" cy="-80" r="15" fill="#26622b"/>
+    <circle cx="-46" cy="-80" r="15" fill="#26622b"/>
+    <circle cx="46" cy="-80" r="15" fill="#26622b"/>
+    <circle cx="118" cy="-80" r="15" fill="#26622b"/>
+    <path d="M-128 40 L128 40 L96 104 L-96 104 Z" fill="url(#mpiece)" stroke="#3f5f23" stroke-width="12" stroke-linejoin="round"/>
+  </g>
+</svg>

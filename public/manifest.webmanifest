@@ -1,0 +1,47 @@
+{
+  "name": "Chess Arena — Real-time chess",
+  "short_name": "Chess Arena",
+  "description": "Real-time 1v1 online chess with bullet, blitz and rapid matchmaking, engine-powered game review and a free analysis board.",
+  "id": "/",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "display_override": ["standalone", "minimal-ui"],
+  "orientation": "any",
+  "background_color": "#262421",
+  "theme_color": "#262421",
+  "categories": ["games", "entertainment"],
+  "lang": "en",
+  "dir": "ltr",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-maskable.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Play a game",
+      "short_name": "Play",
+      "url": "/"
+    },
+    {
+      "name": "Analysis board",
+      "short_name": "Practice",
+      "url": "/analysis"
+    },
+    {
+      "name": "Leaderboard",
+      "short_name": "Ranks",
+      "url": "/leaderboard"
+    }
+  ]
+}
