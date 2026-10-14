@@ -31,11 +31,11 @@ services:
       # Set to your public URL once Render assigns one (used to build the
       # shareable private-room invite links).
       - key: PUBLIC_URL
-        sync: false
+        value: ""
       # Optional — leave blank to use the local JSON store.
       - key: NEXT_PUBLIC_SUPABASE_URL
-        sync: false
+        value: ""
       - key: NEXT_PUBLIC_SUPABASE_ANON_KEY
-        sync: false
+        value: ""
       - key: SUPABASE_SERVICE_ROLE_KEY
-        sync: false
+        value: ""
